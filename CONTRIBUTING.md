@@ -117,7 +117,7 @@ Here’s an example for JavaScript:
 title: Format Date
 description: Formats a date in 'YYYY-MM-DD' format.
 author: dostonnabotov
-tags: javascript,date,format
+tags: date,format
 ---
 
 ```js
@@ -194,7 +194,6 @@ contributors: contributor1, contributor2, your-github-username
 
 > We want to make sure that original author and contributor(s) are credited for their work.
 
-
 ### Adding a New Category
 
 If your snippet doesn’t fit into any existing category, you can create a new one! Just make sure it’s unique and doesn’t overlap with others (e.g., don’t create separate categories for “Date” and “Time” when “Date and Time” works).
@@ -207,7 +206,6 @@ If your snippet doesn’t fit into any existing category, you can create a new o
 2. **Add snippets:**
 
     - Follow the [Adding a New Snippet](#adding-a-new-snippet) instructions.
-
 
 Example structure:
 
@@ -242,6 +240,25 @@ If you want to introduce a new programming language, here's how to do it:
     - Verify that everything is structured correctly and displays as intended.
 
 ---
+
+## Testing Snippets
+
+To test that your snippets are formatted correctly use the following script:
+
+```
+$ npm run snippets:check
+```
+
+It will return nothing if they are well formatted, otherwise it will tell you what the error is.
+
+---
+To preview the snippets, you need to consolidate them, use the following script:
+
+```
+$ npm run snippets:consolidate
+```
+
+It will update the snippets in the `/public` folder, making them available to the frontend.
 
 ## Final Notes
 
